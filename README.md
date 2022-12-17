@@ -19,3 +19,10 @@ while True: # Makes the code loop indefinitely
   # Inititalize a list to hold the results of the dice rolls
   results = []
 
+  # Roll the dice and add the result to the list using the random module
+  for i in range(num_dice):
+    result = random.randint(1, num_sides)
+    results.append(result)
+    
+  # Print the results
+  print("The result is:", results)
