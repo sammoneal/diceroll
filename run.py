@@ -41,7 +41,7 @@ def main():
             elif user_command == 'min':
                 line_break()
                 rolling_message()
-                print(f"Smallest rolled value: {user_dice.max()}")
+                print(f"Smallest rolled value: {user_dice.min()}")
             else:
                 error_message()
         elif user_mode == 'y':
@@ -56,7 +56,7 @@ def main():
             elif user_command == 'min':
                 line_break()
                 rolling_message()
-                print(f"Smallest value by size: {user_dice.sub_max()}")
+                print(f"Smallest value by size: {user_dice.sub_min()}")
             else:
                 error_message()
         else:
